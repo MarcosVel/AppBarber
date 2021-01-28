@@ -26,11 +26,13 @@ export const CustomButtonText = styled.Text`
   color: #fff;
 `;
 
-export const SignMessageButton = styled.TouchableOpacity`
+export const ViewSignMessageButton = styled.View`
   flex-direction: row;
+  margin: 50px 0 20px;
   justify-content: center;
-  margin: 50px 0 20px 0;
 `;
+
+export const SignMessageButton = styled.TouchableOpacity``;
 
 export const SignMessageButtonText = styled.Text`
   font-size: 16px;

@@ -5,6 +5,7 @@ import {
   InputArea,
   CustomButton,
   CustomButtonText,
+  ViewSignMessageButton,
   SignMessageButton,
   SignMessageButtonText,
   SignMessageButtonTextBold,
@@ -58,10 +59,12 @@ export default () => {
 
       </InputArea>
 
-      <SignMessageButton onPress={ handleMessageButtonClick }>
+      <ViewSignMessageButton>
         <SignMessageButtonText>Ainda não possui uma conta?</SignMessageButtonText>
-        <SignMessageButtonTextBold>Cadastre-se</SignMessageButtonTextBold>
-      </SignMessageButton>
+        <SignMessageButton onPress={ handleMessageButtonClick }>
+          <SignMessageButtonTextBold>Cadastre-se</SignMessageButtonTextBold>
+        </SignMessageButton>
+      </ViewSignMessageButton>
 
     </Container>
   );
