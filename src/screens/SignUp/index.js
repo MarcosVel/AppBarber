@@ -11,6 +11,8 @@ import {
   SignMessageButtonTextBold,
 } from './styles';
 
+import ApiServer from '../../apiServer';
+
 import SignInput from '../../components/SignInput';
 
 import BarberLogo from "../../assets/barber.svg";
@@ -25,7 +27,19 @@ export default () => {
   const [ emailField, setEmailField ] = useState('');
   const [ passwordField, setPasswordField ] = useState('');
 
-  const handleSignClick = () => {
+  const handleSignClick = async () => {
+    if (nameField != '' && emailField != '' && passwordField != '') {
+      let res = ApiServer.signUp(nameField, emailField, passwordField);
+      console.log(res);
+      if (res) {
+        alert("DEU CERTO");
+      } else {
+        alert("Erro:" + res.error);
+      }
+
+    } else {
+      alert("Preencha os campos!");
+    }
   }
 
   const handleMessageButtonClick = () => {

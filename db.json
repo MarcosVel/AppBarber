@@ -1,0 +1,35 @@
+{
+  "barber": [
+    {
+      "id": 1,
+      "name": "Junin",
+      "price": 30
+    },
+    {
+      "id": 2,
+      "name": "Eddy",
+      "price": 25
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Marcos Veloso",
+      "email": "marcos.veloso@sempreceub.com",
+      "password": "123",
+      "favorites": [
+        {
+          "id": 1,
+          "name": "Junin",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "name": "Lucas fer",
+      "email": "lucas.fer@sempreceub.com",
+      "password": "123",
+      "id": 2
+    }
+  ]
+}
